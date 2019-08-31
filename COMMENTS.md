@@ -25,3 +25,14 @@
 - Current device id
 - Replaced device id
 - Replace date
+
+
+## Up Databse
+Install postgres as docker
+```
+sudo docker pull postgres
+```
+Start database postgres
+```
+sudo docker run -d -p 5400:5432 --name postgres -e POSTGRES_PASSWORD=123123 postgres
+```
