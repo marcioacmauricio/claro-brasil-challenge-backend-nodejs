@@ -11,7 +11,7 @@
 9. Task 009: O usuário 789 tenta remver os dois devices, tendo suceso apenas na primeira tentativa, sendo informado na segunda tentativa a data da próxima troca
 10. Task 010: Comments
 
-### Tabelas
+### Tables
 
 ## Devices
 - User ID
