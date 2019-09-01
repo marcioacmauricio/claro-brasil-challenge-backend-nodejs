@@ -36,3 +36,19 @@ Start database postgres
 ```
 sudo docker run -d -p 5400:5432 --name postgres -e POSTGRES_PASSWORD=123123 postgres
 ```
+
+## Install
+```
+npm i -g @adonisjs/cli
+```
+```
+npm install
+```
+## Start
+```
+adonis serve --dev
+```
+## Test
+```
+npm run test
+```

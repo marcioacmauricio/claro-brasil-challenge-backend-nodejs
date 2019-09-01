@@ -1,5 +1,4 @@
-# create
-# clique sobre a request e precione cltr + alt + R, para repetir pressione cltr + R
+
 requests.post(
 	'http://127.0.0.1:3333/device',
 	json={

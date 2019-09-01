@@ -23,6 +23,7 @@ class DeviceController {
     try {
       const device = await Device.query().fetch() 
       return device
+      console.log(device)
     } catch ( err ){
       return response.status(500).send({ error: `Erro: ${err.message}`})
     }     
@@ -41,6 +42,12 @@ class DeviceController {
   async store ({ request, response }) {
     try {
       const data = request.only(["user_id", "device_name", "device_model", "enable"])
+      const devices = await Device.query().where('user_id', data.user_id).fetch() 
+      
+      if (devices.rows.length >= 3){
+        console.log(devices.rows.length)
+        return response.status(405).send({ error: "Você já possue 3 dispositivos cadastrados"})
+      }
       const device = await Device.create( data )
       return device
     } catch ( err ){
@@ -59,8 +66,7 @@ class DeviceController {
    */
   async show ({ params, request, response }) {
     try {
-    const device = await Device.query().where('id', params.id).fetch() 
-
+    const device = await Device.query().where('id', params.id).first()
     if (!device){
       return response.status(404).send({message: "Device not found!"})
     }
@@ -108,7 +114,7 @@ class DeviceController {
     try {
       const device = await Device.query().where('id', params.id).first()
       await device.delete()
-      return response.status(200).send({message: "Registro Removido"})
+      return response.status(200).send({message: "Device removido com sucesso"})
     } catch ( err ){
       return response.status(500).send({ error: `Erro: ${err.message}`})
     }         
