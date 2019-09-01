@@ -50,11 +50,7 @@ class DeviceController {
           let data_now = moment().subtract(1, 'month').format('YYYY-MM-DD HH:mm:ss')
           let replacement = await Replacement.query().where('user_id', data.user_id).where('created_at','>=', data_now).first()
           if (replacement !== null){
-<<<<<<< HEAD
-            let next_replace = moment(replacement.created_at).add(1, 'month').format('DD-MM-YYYY HH:mm:ss')
-=======
             let next_replace = moment(replacement.created_at).add(1, 'month').format('DD-MM-YYYY')
->>>>>>> feature/task_006
             return response.status(405).send({status: 1, error: `Você já possue 3 dispositivos cadastrados e uma substituição a menos de 30 dias. Sua próxima substituição é em: ${next_replace}!` })
           } else {
             return response.status(405).send({status: 2, error: "Você já possue 3 dispositivos cadastrados, porém ainda pode substitui "})
@@ -71,14 +67,12 @@ class DeviceController {
           delete data['replaced_device_id']
           const device = await Device.create( data )
           let data_replace = { user_id: data.user_id, current_device_id: device.id, replaced_device_id }
+          const removed_device = await Device.query().where('id', replaced_device_id).first()
+          removed_device.delete()
           replacement = await Replacement.create(data_replace)
           return device
         } else {
-<<<<<<< HEAD
-          let next_replace = moment(replacement.created_at).add(1, 'month').format('DD-MM-YYYY HH:mm:ss')
-=======
           let next_replace = moment(replacement.created_at).add(1, 'month').format('DD-MM-YYYY')
->>>>>>> feature/task_006
           return response.status(405).send({status: 2, error: `Você já possue 3 dispositivos cadastrados e uma substituição no ultimo mẽs. sua próxima subistituição será em:${next_replace}`})
         }
       }
@@ -146,8 +140,16 @@ class DeviceController {
   async destroy ({ params, request, response }) {
     try {
       const device = await Device.query().where('id', params.id).first()
-      await device.delete()
-      return response.status(200).send({message: "Device removido com sucesso"})
+      let data_now = moment().subtract(1, 'month').format('YYYY-MM-DD HH:mm:ss')
+      let replacement = await Replacement.query().where('user_id', device.user_id).where('created_at','>=', data_now).first() 
+      const devices = await Device.query().where('user_id', device.user_id).fetch()
+      if ((devices.rows.length == 1) && (replacement !== null)){
+        let next_replace = moment(replacement.created_at).add(1, 'month').format('DD-MM-YYYY')
+        return response.status(405).send({status: 2, error: `VOcê só poderá subistituir o seu device a partir de ${next_replace}. Dessa forma não pode remover o seu ultimo device`, })        
+      } else {
+        await device.delete()
+        return response.status(200).send({message: "Device removido com sucesso"})        
+      }
     } catch ( err ){
       return response.status(500).send({ error: `Erro: ${err.message}`})
     }         
