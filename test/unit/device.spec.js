@@ -21,7 +21,7 @@ test('Delete all devices for test', async ({ client,  assert }) => {
 
 test('Test Request insert device', async ({ client,  assert }) => {
   const response = await client.post('device').header('accept', 'application/json').send({"user_id": 123, "device_name": "android01", "device_model":"Samsung S20", "enable": true}).end()
-  // console.log(response.text)
+  console.log(response.text)
   let Obj = JSON.parse(response.text)
   DeviceId = Obj.id
   response.assertStatus(200)

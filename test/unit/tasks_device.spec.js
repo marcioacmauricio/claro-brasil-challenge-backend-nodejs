@@ -78,3 +78,8 @@ test('Test user 789 request insert device 02', async ({ client,  assert }) => {
   response.assertStatus(200)
 })
 
+test('Test user 789 request replace device 03', async ({ client,  assert }) => {
+  const response = await client.post('device').header('accept', 'application/json').send({"replaced_device_id": DeviceId,"user_id": 789, "device_name": "android03", "device_model":"Samsung S20", "enable": true}).end()
+  // console.log(response.text)
+  response.assertStatus(200)
+})
