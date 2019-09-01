@@ -1,6 +1,8 @@
 'use strict'
 
 const Device = use('App/Models/Device')
+const Replacement = use('App/Models/Replacement')
+let moment = require('moment');
 
 /** @typedef {import('@adonisjs/framework/src/Request')} Request */
 /** @typedef {import('@adonisjs/framework/src/Response')} Response */
@@ -23,7 +25,6 @@ class DeviceController {
     try {
       const device = await Device.query().fetch() 
       return device
-      console.log(device)
     } catch ( err ){
       return response.status(500).send({ error: `Erro: ${err.message}`})
     }     
@@ -41,16 +42,40 @@ class DeviceController {
 
   async store ({ request, response }) {
     try {
-      const data = request.only(["user_id", "device_name", "device_model", "enable"])
+      const data = request.only(["user_id", "device_name", "device_model", "enable", "replaced_device_id"])
       const devices = await Device.query().where('user_id', data.user_id).fetch() 
       
-      if (devices.rows.length >= 3){
-        console.log(devices.rows.length)
-        return response.status(405).send({ error: "Você já possue 3 dispositivos cadastrados"})
+      if (data.replaced_device_id === undefined){
+        if (devices.rows.length >= 3){
+          let data_now = moment().subtract(1, 'month').format('YYYY-MM-DD HH:mm:ss')
+          let replacement = await Replacement.query().where('user_id', data.user_id).where('created_at','>=', data_now).first()
+          if (replacement !== null){
+            let next_replace = moment(replacement.created_at).add(1, 'month').format('DD-MM-YYYY')
+            return response.status(405).send({status: 1, error: `Você já possue 3 dispositivos cadastrados e uma substituição a menos de 30 dias. Sua próxima substituição é em: ${next_replace}!` })
+          } else {
+            return response.status(405).send({status: 2, error: "Você já possue 3 dispositivos cadastrados, porém ainda pode substitui "})
+          }        
+        } else {
+          const device = await Device.create( data )
+          return device
+        }       
+      } else {
+        let data_now = moment().subtract(1, 'month').format('YYYY-MM-DD HH:mm:ss')
+        let replacement = await Replacement.query().where('user_id', data.user_id).where('created_at','>=', data_now).first()
+        if (replacement === null){
+          let replaced_device_id = data.replaced_device_id
+          delete data['replaced_device_id']
+          const device = await Device.create( data )
+          let data_replace = { user_id: data.user_id, current_device_id: device.id, replaced_device_id }
+          replacement = await Replacement.create(data_replace)
+          return device
+        } else {
+          let next_replace = moment(replacement.created_at).add(1, 'month').format('DD-MM-YYYY')
+          return response.status(405).send({status: 2, error: `Você já possue 3 dispositivos cadastrados e uma substituição no ultimo mẽs. sua próxima subistituição será em:${next_replace}`})
+        }
       }
-      const device = await Device.create( data )
-      return device
     } catch ( err ){
+      console.log(err.message)
       return response.status(500).send({ error: `Erro: ${err.message}`})
     }  
   }
