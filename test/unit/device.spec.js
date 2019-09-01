@@ -61,36 +61,5 @@ test('Test delete device', async ({ client,  assert }) => {
 
 
 
-test('Test delete all devices for test', async ({ client,  assert }) => {
-  let all_devices = await Device.query().fetch()
-  for (let i in all_devices.rows){
-    let device = all_devices.rows[i]
-    await device.delete()
-  }
-  let chk_devices = await Device.query().fetch()
-  assert.equal(0, chk_devices.rows.length)
-})
-
-
-test('Test request insert device 01', async ({ client,  assert }) => {
-  const response = await client.post('device').header('accept', 'application/json').send({"user_id": 123, "device_name": "android01", "device_model":"Samsung S20", "enable": true}).end()
-  response.assertStatus(200)
-})
-
-test('Test request insert device 02', async ({ client,  assert }) => {
-  const response = await client.post('device').header('accept', 'application/json').send({"user_id": 123, "device_name": "android02", "device_model":"Samsung S20", "enable": true}).end()
-  response.assertStatus(200)
-})
-
-test('Test request insert device 03', async ({ client,  assert }) => {
-  const response = await client.post('device').header('accept', 'application/json').send({"user_id": 123, "device_name": "android03", "device_model":"Samsung S20", "enable": true}).end()
-  response.assertStatus(200)
-})
-
-test('Test request insert device 04', async ({ client,  assert }) => {
-  const response = await client.post('device').header('accept', 'application/json').send({"user_id": 123, "device_name": "android04", "device_model":"Samsung S20", "enable": true}).end()
-  response.assertStatus(405)
-})
-
 
 

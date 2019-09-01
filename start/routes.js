@@ -17,3 +17,4 @@
 const Route = use('Route')
 
 Route.resource('device', 'DeviceController')
+Route.resource('replacement', 'ReplacementController')
