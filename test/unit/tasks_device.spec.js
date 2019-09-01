@@ -26,29 +26,55 @@ test('Test delete all devices for test', async ({ client,  assert }) => {
 })
 
 
-test('Test request insert device 01', async ({ client,  assert }) => {
+test('Test user 456 request insert device 01', async ({ client,  assert }) => {
   const response = await client.post('device').header('accept', 'application/json').send({"user_id": 456, "device_name": "android01", "device_model":"Samsung S20", "enable": true}).end()
+  // console.log(response.text)
   response.assertStatus(200)
 })
 
-test('Test request insert device 02', async ({ client,  assert }) => {
+test('Test user 456 request insert device 02', async ({ client,  assert }) => {
   const response = await client.post('device').header('accept', 'application/json').send({"user_id": 456, "device_name": "android02", "device_model":"Samsung S20", "enable": true}).end()
+  // console.log(response.text)
   response.assertStatus(200)
 })
 
-test('Test request insert device 03', async ({ client,  assert }) => {
+test('Test user 456 request insert device 03', async ({ client,  assert }) => {
   const response = await client.post('device').header('accept', 'application/json').send({"user_id": 456, "device_name": "android03", "device_model":"Samsung S20", "enable": true}).end()
+  // console.log(response.text)
   let Obj = JSON.parse(response.text)
   DeviceId = Obj.id  
   response.assertStatus(200)
 })
 
-test('Test request insert device 04', async ({ client,  assert }) => {
+test('Test user 456 request insert device 04', async ({ client,  assert }) => {
   const response = await client.post('device').header('accept', 'application/json').send({"user_id": 456, "device_name": "android04", "device_model":"Samsung S20", "enable": true}).end()
+  // console.log(response.text)
   response.assertStatus(405)
 })
 
-test('Test request replace device 03', async ({ client,  assert }) => {
+test('Test user 456 request replace device 03', async ({ client,  assert }) => {
   const response = await client.post('device').header('accept', 'application/json').send({"replaced_device_id": DeviceId,"user_id": 456, "device_name": "android03", "device_model":"Samsung S20", "enable": true}).end()
+  // console.log(response.text)
   response.assertStatus(200)
 })
+
+test('Test user 456 request insert device 04 after replace', async ({ client,  assert }) => {
+  const response = await client.post('device').header('accept', 'application/json').send({"user_id": 456, "device_name": "android04", "device_model":"Samsung S20", "enable": true}).end()
+  // console.log(response.text)
+  response.assertStatus(405)
+})
+
+test('Test user 789 request insert device 01', async ({ client,  assert }) => {
+  const response = await client.post('device').header('accept', 'application/json').send({"user_id": 789, "device_name": "android01", "device_model":"Samsung S20", "enable": true}).end()
+  // console.log(response.text)
+  response.assertStatus(200)
+})
+
+test('Test user 789 request insert device 02', async ({ client,  assert }) => {
+  const response = await client.post('device').header('accept', 'application/json').send({"user_id": 789, "device_name": "android02", "device_model":"Samsung S20", "enable": true}).end()
+  // console.log(response.text)
+  let Obj = JSON.parse(response.text)
+  DeviceId = Obj.id    
+  response.assertStatus(200)
+})
+
