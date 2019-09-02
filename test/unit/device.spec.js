@@ -19,7 +19,7 @@ test('Delete all devices for test', async ({ client,  assert }) => {
 
 
 
-test('Test Request insert device', async ({ client,  assert }) => {
+test('Test user 123 insert device', async ({ client,  assert }) => {
   const response = await client.post('device').header('accept', 'application/json').send({"user_id": 123, "device_name": "android01", "device_model":"Samsung S20", "enable": true}).end()
   // console.log(response.text)
   let Obj = JSON.parse(response.text)
@@ -34,7 +34,7 @@ test('Test user 123 request get device', async ({ client,  assert }) => {
 })
 
 
-test('Test update device', async ({ client,  assert }) => {
+test('Test user 123 update device', async ({ client,  assert }) => {
   const response = await client.patch(`device/${DeviceId}`).header('accept', 'application/json').send({"user_id": 123, "device_name": "android100", "device_model":"Samsung S20", "enable": true}).end()
   // console.log(response.text)
   let Obj = JSON.parse(response.text)
