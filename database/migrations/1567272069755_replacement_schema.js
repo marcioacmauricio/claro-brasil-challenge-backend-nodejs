@@ -8,8 +8,8 @@ class ReplacementSchema extends Schema {
     this.create('replacements', (table) => {
       table.increments()
       table.integer('user_id').unsigned()
-      table.integer('current_device_id').unsigned().references('id').inTable('devices')
-      table.integer('replaced_device_id').unsigned().references('id').inTable('devices')
+      table.integer('current_device_id')
+      table.integer('replaced_device_id')
       table.timestamps()
     })
   }

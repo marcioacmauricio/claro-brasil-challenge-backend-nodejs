@@ -46,7 +46,7 @@ test('Test user 456 request insert device 03', async ({ client,  assert }) => {
   response.assertStatus(200)
 })
 
-test('Test user 456 request insert device 04', async ({ client,  assert }) => {
+test('Test user 456 request recuse insert device 04', async ({ client,  assert }) => {
   const response = await client.post('device').header('accept', 'application/json').send({"user_id": 456, "device_name": "android04", "device_model":"Samsung S20", "enable": true}).end()
   // console.log(response.text)
   response.assertStatus(405)
@@ -58,7 +58,7 @@ test('Test user 456 request replace device 03', async ({ client,  assert }) => {
   response.assertStatus(200)
 })
 
-test('Test user 456 request insert device 04 after replace', async ({ client,  assert }) => {
+test('Test user 456 request recuse insert device 04 after replace', async ({ client,  assert }) => {
   const response = await client.post('device').header('accept', 'application/json').send({"user_id": 456, "device_name": "android04", "device_model":"Samsung S20", "enable": true}).end()
   // console.log(response.text)
   response.assertStatus(405)
@@ -117,7 +117,7 @@ test('Test user 789 delete first device', async ({ client,  assert }) => {
 })
 
 
-test('Test user 789 delete second device', async ({ client,  assert }) => {
+test('Test user 789 recuse delete second device', async ({ client,  assert }) => {
   const response = await client.delete(`device/${Device02}`).header('accept', 'application/json').end()
   let Obj = JSON.parse(response.text)
   // console.log(response.text)

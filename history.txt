@@ -1,0 +1,1000 @@
+   12  ls
+   13  git init
+   14  git remote add origin git@gitlab.com:marcioacmauricio/argon-template.git
+   15  git status
+   16  git pull origin master
+   17  cd frontend/
+   18  ls
+   19  clear
+   20  ls
+   21  ls
+   22  updatedb
+   23  sudo updatedb
+   24  locate Super.py
+   25  ssh root@easysuite.com.br
+   26  ls
+   27  cd /home/marcio/Matrisys/MatrisysSPA/
+   28  ls
+   29  yarn start
+   30  cd APITornado/
+   31  ls
+   32  python3 Application.py 
+   33  clear
+   34  ls
+   35  npm init
+   36  npm init -y
+   37  clear
+   38  rm package.json 
+   39  git status
+   40  git init
+   41  git remote add origin https://github.com/marcioacmauricio/node-cart.git
+   42  git status 
+   43  gti pull origin master
+   44  git pull origin master
+   45  git init
+   46  git status
+   47  npm init -y
+   48  npm install --save-dev eslint
+   49  clear
+   50  ls
+   51  rm -rf node_modules/
+   52  rm package*
+   53  mkdir backend
+   54  mkdir frontend
+   55  cd backend/
+   56  npm init -y
+   57  ls
+   58  vim .gitignore
+   59  mv .gitignore ../
+   60  git status
+   61  cd ../
+   62  git status
+   63   git add .
+   64  ls
+   65  cd backend/
+   66  ls
+   67  git status
+   68  git add .
+   69  git status
+   70  ls
+   71  npm install --save-dev eslint
+   72  ls
+   73  git status
+   74  git add
+   75  git add .
+   76  git status
+   77  git add ../.gitignore 
+   78  ls
+   79  git status
+   80  clear
+   81  git status
+   82  node_modules/.bin/eslint --init
+   83  git status
+   84  node_modules/.bin/eslint --init
+   85  npm uninstall eslint-plugin-react
+   86  node_modules/.bin/eslint --init
+   87  node_modules/.bin/eslint src/** test/** --fix
+   88  npm run lint
+   89  npm install --save-dev jest
+   90  node_modules/.bin/jest
+   91  npm test
+   92  git status
+   93  cd ../
+   94  ls
+   95  git add .
+   96  git status
+   97  git push origin master
+   98  clear
+   99  ls
+  100  npm init -y
+  101  npm i -g @adonisjs/cli
+  102  sudo npm i -g @adonisjs/cli
+  103  git init
+  104  git status
+  105  cd ../
+  106  rm -rf adones-node-api/
+  107  adonis new adonis-node-api
+  108  rm -rf adonis-node-api/
+  109  adonis new adonis-node-api --api-only
+  110  cd adonis-node-api/
+  111  ls
+  112  adonis serve --dev 
+  113  git status
+  114  git init
+  115  git remote add origin https://github.com/marcioacmauricio/adonis-node-api.git
+  116  ls
+  117  git add .
+  118  git commit -m "start app as 'adonis new adonis-node-api --api-only'"
+  119  git push origin master
+  120  git pull origin master
+  121  git status
+  122  ls
+  123  git push origin master
+  124  git add .
+  125  git status
+  126  git push origin master
+  127  git remote -f origin https://github.com/marcioacmauricio/adonis-node-api.git
+  128  cd ../
+  129  rm -rf adonis-node-api/
+  130  adonis new adonis-node-api --api-only
+  131  ls
+  132  cd adonis-node-api/
+  133  ls
+  134  git init
+  135  git remote add -f origin https://github.com/marcioacmauricio/adonis-node-api.git
+  136  git status
+  137  git add .
+  138  git status
+  139  git commit -m "start project as 'adonis new adonis-node-api --api-only'"
+  140  git push origin master
+  141  git pull origin master
+  142  git status
+  143  git push --force
+  144  git push -f origin master
+  145  docker pull postgres
+  146  sudo docker pull postgres
+  147  docker run -d -p 5400:5432 --name mypostgresdb -e POSTGRES_PASSWORD=123123 postgres
+  148  sudo docker run -d -p 5400:5432 --name mypostgresdb -e POSTGRES_PASSWORD=123123 postgres
+  149  docker ps
+  150  sudo docker ps
+  151  npm install --save pg
+  152  git status
+  153  adonis migration:run
+  154  adonis make:controller User --type http
+  155  adonis serve --dev
+  156  adonis install @adonisjs/validator
+  157  adonis serve --dev
+  158  git status
+  159  git add .
+  160  git commit -m "Create user and authenticate"
+  161  git push origin master
+  162  ls
+  163  adonis make:model tarefa -m -c
+  164  adonis migration:run
+  165  adonis serve --dev
+  166  ls
+  167  git status
+  168  git add .
+  169  git commit -m "create crud 'Tarefa'"
+  170  git push origin master
+  171  adonis make:model arquivos -m
+  172  adonis migragation:run
+  173  adonis migration:run
+  174  adonis make:controller Arquivo
+  175  adonis serve --dev
+  176  adonis migration:run
+  177  adonis serve --dev
+  178  adonis migration:run
+  179  adonis serve --dev
+  180  clear
+  181  clear && clear
+  182  adonis serve --dev
+  183  git status
+  184  gti add .
+  185  git add .
+  186  git commit -m "add crud 'arquivos'"
+  187  git push origin master
+  188  adonis make:model teste.schema
+  189  adonis make:migration teste.schema
+  190  cd matrisys-v21
+  191  cd frontend/
+  192  ls
+  193  yarn start
+  194  ls
+  195  cd Matrisys/
+  196  ls
+  197  clear
+  198  ls
+  199  clear
+  200  ls
+  201  clear
+  202  cd matrisys-v21
+  203  ls
+  204  cd back_achtect/
+  205  ls
+  206  python3 App.py 
+  207  cd ../back
+  208  cd ../backend/
+  209  ls
+  210  python3 App.py 
+  211  cd back_achtect/
+  212  python3 App.py 
+  213  clear && clear
+  214  python3 App.py 
+  215  clear && clear
+  216  ls
+  217  python3 App.py 
+  218  clear && clear
+  219  python3 App.py 
+  220  clear && clear
+  221  python3 App.py 
+  222  clear && clear
+  223  python3 App.py 
+  224  cd Matrisys/
+  225  ls
+  226  cd matrisys-v21
+  227  ls
+  228  cd frontend/
+  229  ls
+  230  yarn start
+  231  ls
+  232  cd ../back
+  233  cd ../backend/
+  234  ls
+  235  python3 
+  236  python3 App.py 
+  237  cd ../back_achtect/
+  238  ls
+  239  python3 App.py 
+  240  cd /home/marcio/Documentos/
+  241  ls
+  242  cd ../
+  243  cd Repositorios/projects/1/project_full/
+  244  ls
+  245  cd frontend/
+  246  ls
+  247  cd ../
+  248  git init
+  249  git remote add origin git@gitlab.com:marcioacmauricio/argon-template.git
+  250  git pull -f origin master
+  251  yarn install
+  252  ls
+  253  rm -rm node_modules/
+  254  rm -rf node_modules/
+  255  rm yarn.lock 
+  256  cd frontend/
+  257  yarn install
+  258  yarn start
+  259  cd /home/marcio/
+  260  ls
+  261  cd Repositorios/projects/1/project_full/
+  262  ls
+  263  cd frontend/
+  264  cd ../
+  265  cd backend/
+  266  ls
+  267  python3 App.py 
+  268  cd ..
+  269  gti status
+  270  git status
+  271  frontend/src/components/Navbars/AuthNavbar.jsx
+  272  git add frontend/src/layouts/Admin.jsx
+  273  git status
+  274  git add frontend/src/components/Navbars/AuthNavbar.jsx
+  275  clear
+  276  git status
+  277  git commit -m "fix error update"
+  278  git push origin master
+  279  cd backend/install/
+  280  ls
+  281  python3 Create.py 
+  282  cd ../
+  283  python3 App.py 
+  284  cd install/
+  285  ls
+  286  python3 Create.py 
+  287  cd ../
+  288  python3 App.py 
+  289  python3
+  290  cd Documentos/Testes\ de\ Avaliação/
+  291  ls
+  292  vim teste.py
+  293  python3 teste.py 
+  294  python3
+  295  python
+  296  clear
+  297  cd /home/marcio/Matrisys/matrisys-v21
+  298  ls
+  299  cd frontend/
+  300  yarn start
+  301  cd frontend/
+  302  ls
+  303  yarn start
+  304  ls
+  305  cd ../backend/
+  306  ls
+  307  python3 App.py 
+  308  cd ../backend_beta/
+  309  python3 App.py 
+  310  clear && clear
+  311  python3 App.py 
+  312  ls
+  313  cd Matrisys/matrisys-v21
+  314  ls
+  315  cd frontend/
+  316  ls
+  317  yarn start
+  318  locate Super.py
+  319  vim /home/marcio/Repositorios/projects/1/matrisys-v21/backend/db/controllers/Super.py
+  320  updatedb
+  321  sudo updatedb
+  322  locate Super.py
+  323  sublime .
+  324  cd /home/marcio/Repositorios/projects/1/matrisys-v21/backend/db/controllers/
+  325  sublime .
+  326  ls
+  327  cd backend_beta/
+  328  ls
+  329  python3 App.py 
+  330  ls
+  331  python3 App.py 
+  332  ifconfig
+  333  cd frontend/
+  334  yarn run build
+  335  git status
+  336  git add src/assets/scss/core/icons/_icon.scss
+  337  git commit -m "fix bug scss to build"
+  338  ls
+  339  cd build/
+  340  ls
+  341  git status
+  342  cd ../
+  343  arn run build
+  344  yarn run build
+  345  cd ../backend/
+  346  python3 App.py 
+  347  yarn run build
+  348  cd ../
+  349  cd frontend/
+  350  yarn run build
+  351  cd ../backend/
+  352  ls
+  353  python3 App.py 
+  354  ls
+  355  cd Documentos/
+  356  ls
+  357  cd 
+  358  cd Mat
+  359  cd Matrisys/
+  360  ls
+  361  create-react-app site-spelho
+  362  cd site-spelho/
+  363  ls
+  364  yarn start
+  365  ls
+  366  yarn run build
+  367  ls
+  368  tar cvzf build/
+  369  tar cvzf build.tar.gz build/
+  370  scp build.tar.gz root@macm.me
+  371  ssh root@macm.me
+  372  ping macm.me
+  373  ssh root@201.30.93.170
+  374  ls
+  375  scp build.tar.gz root@macm.me:/home
+  376  ssh root@201.30.93.170
+  377  cd backend
+  378  ls
+  379  python3 App.py 
+  380  cd ../backend_beta/
+  381  python3 App.py 
+  382  clear
+  383  python3 App.py 
+  384  cd ../backend
+  385  python3 App.py 
+  386  cd ../backend_beta/
+  387  python3 App.py 
+  388  ls
+  389  cd Matrisys/
+  390  ls
+  391  cd matrisys-v21
+  392  ls
+  393  cd backend_beta/
+  394  ls
+  395  python3 App.py 
+  396  cd ../
+  397  ls
+  398  cd frontend/
+  399  ls
+  400  yarn start
+  401  ls
+  402  cd backend
+  403  ls
+  404  python3 Tests.py 
+  405  clear
+  406  python3 Tests.py 
+  407  cd ../backend_beta/
+  408  ls
+  409  python3 tests/TestSuperController.py 
+  410  cd tests/
+  411  ls
+  412  python3 TestSuperController.py 
+  413  cd ../
+  414  python3 tests/TestSuperController.py 
+  415  lsls
+  416  , debug=True)
+  417  application.listen(8082)
+  418  tornado.ioloop.IOLoop.instance().start()ls
+  419  ls
+  420  python3 dev.py 
+  421  cd tests/
+  422  python TestSuperController.py 
+  423  cd ../
+  424  python TestSuperController.py 
+  425  cd tests/
+  426  ls
+  427  python3 TestSuperController.py 
+  428  cd ../
+  429  ls
+  430  python3 dev.py 
+  431  ifconfig
+  432  python
+  433  clear
+  434  cd Matrisys/matrisys-v21
+  435  ls
+  436  cd frontend/
+  437  yarn start
+  438  python
+  439  python3 
+  440  cd ../backend
+  441  ls
+  442  python3 App.py 
+  443  cd /home/marcio/Downloads/
+  444  ls
+  445  cd signxml-master/
+  446  ls
+  447  python setup.py 
+  448  python setup.py install
+  449  python3 setup.py install
+  450  ls
+  451  cd test/
+  452  ls
+  453  python3 test.py 
+  454  ls
+  455  cd ../
+  456  ls
+  457  sudo python3 setup.py install
+  458  cd test/
+  459  ls
+  460  python3 test.py 
+  461  ifconfig
+  462  python3 
+  463  clear
+  464  ls
+  465  cd backend
+  466  cd ../backend_beta/
+  467  python3 dev.py 
+  468  cd tests/
+  469  ls
+  470  python3 TestSuperController.py 
+  471  python3 Dev.py 
+  472  cd ../
+  473  python3 dev.py 
+  474  python3 tests/TestSuperController.py 
+  475  python3 dev.py 
+  476  clear && clear
+  477  python3 dev.py 
+  478  python3
+  479  cd backend/
+  480  ls
+  481  python3 App.py 
+  482  ls
+  483  git status
+  484  clear
+  485  python3 App.py 
+  486  ls
+  487  cd install/
+  488  ls
+  489  python3 Create.py 
+  490  cd ../
+  491  ls
+  492  python3 App.py 
+  493  pycharm
+  494  ls
+  495  cd backend_beta/
+  496  ls
+  497  python3 dev.py 
+  498  ls
+  499  cd Matrisys/matrisys-v21
+  500  ls
+  501  cd backend
+  502  ls
+  503  python3 App.py 
+  504  cd ../
+  505  cd frontend/
+  506  ls
+  507  yarn start
+  508  python3 App.py 
+  509  python
+  510  clear
+  511  ls
+  512  cd /home/marcio/Repositorios/projects/1/project_full/
+  513  ls
+  514  cd frontend/
+  515  yarn start
+  516  cd /home/marcio/Matrisys/
+  517  ls
+  518  git clone https://github.com/marcioacmauricio/project.git
+  519  cd project/
+  520  ls
+  521  git status
+  522  git add .
+  523  git commit -m "initial commit"
+  524  git push origin master
+  525  git add .
+  526  git commit -m "initial commit"
+  527  git push origin master
+  528  php -v
+  529  php
+  530  python
+  531  composer -v
+  532  ls
+  533  mkdir Laravel
+  534  ls
+  535  cd Laravel/
+  536  ls
+  537  php -v
+  538  composer create-project --prefer-dist laravel/laravel blog
+  539  $HOME/.config/composer/vendor/bin
+  540  echo $HOME
+  541  echo $HOME/.config
+  542  cd echo $HOME/.config
+  543  cd $HOME/.config
+  544  ls
+  545  cd composer/
+  546  cd /home/marcio/Laravel/
+  547  ls
+  548  composer global require laravel/installer
+  549  laravel new blog
+  550  ls
+  551  cd $HOME/.config/composer/vendor/bin
+  552  ls
+  553  echo $HOME/.config/composer/vendor/bin
+  554   /home/marcio/.config/composer/vendor/bin
+  555  cd /usr/bin/
+  556  ls
+  557  ln -s laravel /home/marcio/.config/composer/vendor/bin
+  558  ln -s laravel /home/marcio/.config/composer/vendor/bin/laravel
+  559  ls
+  560  ln -s /home/marcio/.config/composer/vendor/bin/laravel laravel
+  561  sudo ln -s /home/marcio/.config/composer/vendor/bin/laravel laravel
+  562  ls
+  563  cd /home/marcio/Laravel/
+  564  laravel new blog
+  565  php artisan serve
+  566  export PATH="$PATH:$HOME/.composer/vendor/bin"
+  567  cat ~/.bashrc
+  568  php artisan serve
+  569  ls
+  570  cd blog/
+  571  ls
+  572  php artisan serve
+  573  cd Laravel/
+  574  ls
+  575  cd blog/
+  576  ls
+  577  clear
+  578  ls
+  579  php artisan serve
+  580  clear
+  581  ls
+  582  php artisan route:list
+  583  cd backend/
+  584  ls
+  585  python3 App.py 
+  586  clear
+  587  python3 App.py 
+  588  git status
+  589  git add db/fields
+  590  git status
+  591  git add db/controllers/Super.py 
+  592  git commit -m "upgrade fields and super controller"
+  593  git push origin master
+  594  git commit -m "upgrade fields and super controller"
+  595  git push origin master
+  596  python3 App.py 
+  597  clear && clear
+  598  python3 App.py 
+  599  clear && clear
+  600  python3 App.py 
+  601  cd backend/
+  602  ls
+  603  python3 App.py 
+  604  clear
+  605  ls
+  606  cd backend/
+  607  ls
+  608  python3 App.py 
+  609  clear && clear
+  610  python3 App.py 
+  611  clear && clear
+  612  python3 App.py 
+  613  cd Matrisys/matrisys-v21
+  614  ls
+  615  cd frontend/
+  616  ls
+  617  python
+  618  clear
+  619  ls
+  620  yarn start
+  621  cd ../backend
+  622  ls
+  623  python3 App.py 
+  624  clear
+  625  ls
+  626  python3 App.py 
+  627  ks
+  628  cd /home/marcio/Repositorios/projects/
+  629  ls
+  630  cd 1/
+  631  mkdir matrisys-v2
+  632  cd matrisys-v2
+  633  cd ../
+  634  mkdir matrisys-v21
+  635  cd matrisys-v21
+  636  git init
+  637  git remote add origin git@gitlab.com:marcioacmauricio/argon-template.git
+  638  git pull origin master
+  639  ls
+  640  cd frontend/
+  641  yarn start
+  642  cd ../
+  643  ls
+  644  cd builder_template/
+  645  ls
+  646  git int
+  647  git init
+  648  git remote add origin git@gitlab.com:marcioacmauricio/argon-template.git
+  649  git pull origin master
+  650  cd frontend/
+  651  ls
+  652  yarn start
+  653  cd ../backend/
+  654  ls
+  655  cd ../
+  656  ls
+  657  cd ../
+  658  cd builder_template
+  659  ls
+  660  cd backend/
+  661  ls
+  662  python3 App.py 
+  663  adonis serve --dev
+  664  clear
+  665  adonis serve --dev
+  666  clear
+  667  adonis serve --dev
+  668  yum search gitlab
+  669  yum search git-flow
+  670  sudo dnf install gitflow
+  671  ls
+  672  cd Matrisys/
+  673  ls
+  674  git clone git@gitlab.com:marcioacmauricio/gitflow-teste.git
+  675  cd gitflow-teste/
+  676  ls
+  677  ls -la
+  678  git flow init
+  679  git branch
+  680  git push origin master
+  681  git  push orgin develop
+  682  git  push origin develop
+  683  git flow feature start issue_007
+  684  git status
+  685   git status
+  686  git add .
+  687  git commit -m "Initial Commit"
+  688  git status
+  689  git flow feature finish
+  690   git flow release start 2019.001
+  691  git flow release publish
+  692  git flow release publish 2015.001
+  693  git flow release publish 2019.001
+  694  git pull origin relaase/2015.001
+  695  git pull origin relaase/2019.001
+  696  git status
+  697  git add .
+  698  git commit -m "Alteração de release"
+  699  git status
+  700  git branch
+  701  git push 
+  702  git pull origin relaase/2019.001
+  703  clear
+  704  git push origin release/2015.001
+  705  git push origin release/2019.001
+  706  git flow release finish 2019.001
+  707   git push origin develop
+  708  git checkout master
+  709  git push origin master
+  710  git push origin 2015.001
+  711  git flow hotfix start 2019.001.01
+  712  git fow hotfix publish
+  713  git flow hotfix publish
+  714  git flow hotfix publish 2019.001.01
+  715   git commit -m
+  716   git add .
+  717  git commit -m "hotfix"
+  718  git flow hotfix publish 2019.001.01
+  719  git flow hotfix publish hotfix/2019.001.01
+  720  git flow hotfix publish 2019.001.01
+  721  git flow hotfix finish 2019.001.01
+  722  git push origin develop
+  723  git flow hotfix finish 2019.001.01
+  724  git push origin master
+  725  git push origin develop
+  726  cd ../
+  727  git clone git@github.com:marcioacmauricio/claro-brasil-challenge-backend-nodejs.git
+  728  ls
+  729  cd claro-brasil-challenge-backend-nodejs/
+  730  ls
+  731  git flow init
+  732  git branch
+  733  git push origin master
+  734  git push origin develop
+  735  git flow feature start task_001
+  736  git status
+  737  git add .
+  738  git status
+  739  gti commit -m "Feature Task 001"
+  740  git commit -m "Feature Task 001"
+  741  git flow feature finish task_001
+  742  git flow feature publish task_001
+  743  git push origin master
+  744  git push origin develop
+  745  git push origin master
+  746  git flow release start 2019.001
+  747  git flow release publish 2019.001
+  748  git add .
+  749  git status
+  750  git commit -m "Create release"
+  751  git pull origin release/2019.001
+  752  git flwo release finish 2019.001 
+  753  git flow release finish 2019.001 
+  754  git push origin develop
+  755  git checout master
+  756  git checkout master
+  757  git push origin master
+  758  history
+  759  git flow feature start task_002
+  760  git branch
+  761  adonis new device-api --api-only
+  762  cd device-api/
+  763  ls
+  764  ls -la
+  765  ls
+  766  cd ../
+  767  cd /home/marcio/Matrisys/claro-brasil-challenge-backend-nodejs/
+  768  ls
+  769  adonis serve --dev
+  770  git branch
+  771  gti add .
+  772  git add .
+  773  git commit commit -m "task_002"
+  774  git flow feature publish feature/task_002
+  775  git flow feature publish task_002
+  776  git status
+  777  git add .
+  778  git commit -m "feature/task_002"
+  779  git flow feature publish task_002
+  780  git flow feature finish task_002
+  781  git branch
+  782  git push
+  783  git push origin 
+  784  adonis make:model device -m -c
+  785  sublime .
+  786  adonis make:model replacement -m -c
+  787  sudo docker run -d -p 5400:5432 --name postgres -e POSTGRES_PASSWORD=123123 postgres
+  788  docker ps
+  789  sudo docker ps
+  790  npm install --save pg
+  791  adonis migration:run
+  792  ls
+  793  git branch
+  794  history 
+  795  git branch
+  796  git flow feature start task_003
+  797  git status
+  798  git branch
+  799  git add .
+  800  git status
+  801  git flow feature publish feature/task_002
+  802  git flow feature publish feature/task_003adonis serve --dev
+  803  git branch
+  804  git flow feature publish feature/task_003
+  805  git commit -m "feature/task_003"
+  806  git flow feature publish feature/task_003
+  807  git push
+  808  git push --set-upstream origin feature/task_003
+  809  git flow feature publish task_003
+  810  git flow feature finish task_003
+  811  git branch
+  812  git status
+  813  npm start stest
+  814  npm test
+  815  npm run test
+  816  ls
+  817  adonis test:watch
+  818  history
+  819  git flow feature start task_004
+  820  git branch
+  821  git flow feature publish task_004
+  822  git add .
+  823  ls
+  824  adonis serve --dev
+  825  history > history.txt
+  826  npm run test
+  827  npm run test:watch
+  828  adonis serve -
+  829  adonis serve -dev
+  830  adonis serve --dev
+  831  npm run test:watch
+  832  clear
+  833  npm run test:watch
+  834  clear
+  835  npm run test:watch
+  836  npm run test:watch
+  837  npm install --save moment
+  838  npm run test:watch
+  839  adonis serve --dev 
+  840  git branch
+  841  adonis serve --dev 
+  842  git status
+  843  git add .
+  844  git branch
+  845  git commit -m "task completion feature/task_005"
+  846  git flow feature publish task_005
+  847  git flow feature start task_006
+  848  git branch
+  849  git flow feature finish task_005
+  850  git branch
+  851  git checkout feature/task_006
+  852  git branch
+  853  adonis serve --dev 
+  854  git add .
+  855  git status
+  856  git branch
+  857  git commit -m "task completion feature/task_006"
+  858  git flow publish task_006
+  859  git flow feature publish task_006
+  860  git flow feature start task_009
+  861  git branch 
+  862  adonis serve --dev 
+  863  git status
+  864  git add .
+  865  git commit -m "task completion feature/task_007"
+  866  git flow feature publish task_007
+  867  git branch
+  868  git flow feature publish task_009
+  869  git flow feature finish task_009
+  870  git flow feature finish task_006
+  871  git flow feature start task_007
+  872  git status
+  873  git add .
+  874  git commit 
+  875  git commit -m "fix conflict in task 009"
+  876  git flow feature publish task_007
+  877  ls
+  878  git branch
+  879  gti flow feture finish task task_006
+  880  git flow feture finish task task_006
+  881  git flow feature finish task task_006
+  882  git flow feature finish task task_007
+  883  git flow feature finish task_007
+  884  git status
+  885  git branch
+  886  git flow feature start task_008
+  887  adonis serve --dev 
+  888  git status
+  889  git add .
+  890  git commit -m "finish feature task_008"
+  891  git flow feature publish task_008
+  892  git branch
+  893  git flwo feature finish task_006
+  894  git flow feature finish task_006
+  895  git flow feature finish task_008
+  896  git status
+  897  git brach
+  898  git branch
+  899  git flow feature finish task_008
+  900  git brach
+  901  git branch
+  902  git flow feature finish task_006
+  903  git branch
+  904  git flow feature finish task_008
+  905  git branch
+  906  history
+  907  adonis serve --dev 
+  908  git status
+  909  git add .
+  910  git status
+  911  git branch
+  912  git flow feature start task_009
+  913  git brahch
+  914  git branch
+  915  git status
+  916  git commit -m "finish feature task_009"
+  917  git flwo feture publish task_009
+  918  git flow feture publish task_009
+  919  git flow feature publish task_009
+  920  git flow feature publish task_009 -f
+  921  adonis serve --dev 
+  922  git status
+  923  adonis serve --dev 
+  924  git branch
+  925  git status
+  926  git add .
+  927  git status
+  928  git commit -m "finish task_009"
+  929  git flwo feature finish task_009
+  930  git flow feature finish task_009
+  931  adonis serve --dev 
+  932  git status
+  933  git branch
+  934  ls
+  935  git branch
+  936  git push origin develop
+  937  git flow feature start task_010
+  938  git status
+  939  adonis serve --dev
+  940  clear
+  941  ls
+  942  adonis make:test Post
+  943  adonis make:test Device
+  944  npm -i @adonisjs/vow/providers/VowProvider
+  945  npm install --save @adonisjs/vow/providers/VowProvider
+  946  ls
+  947  npm install --save @adonisjs/vow
+  948  adonis make:test Device
+  949  clear
+  950  adonis make:test Device
+  951  npm run test
+  952  adonis test -w
+  953  history
+  954  sudo docker ps
+  955  npm run test
+  956  clear
+  957  npm run test
+  958  clear
+  959  npm run test
+  960  clear
+  961  npm run test
+  962  clear
+  963  npm run test
+  964  clear
+  965  npm run test
+  966  clear
+  967  npm run test
+  968  clear
+  969  npm run test
+  970  clear
+  971  npm run test
+  972  clear
+  973  npm run test
+  974  clear
+  975  npm run test
+  976  clear 
+  977  npm run test
+  978  clear 
+  979  npm run test
+  980  history
+  981  npm install --save-dev nodemon
+  982  npm run test
+  983  adonis serve --dev
+  984  git status
+  985  git add .
+  986  git branch
+  987  gti commit -m "feature/task_004 completion"
+  988  git commit -m "feature/task_004 completion"
+  989  git flow feature publish task_004
+  990  ls
+  991  git branch
+  992  git flow feature finish task_004
+  993  git branch
+  994  git flow feature start task_005
+  995  git branch
+  996  git status
+  997  adonis serve --dev
+  998  adonis make:test Replacement
+  999  adonis serve --dev
+ 1000  git status
+ 1001  git branch
+ 1002  sudo docker run -d -p 5400:5432 --name postgres -e POSTGRES_PASSWORD=123123 postgres
+ 1003  docker ps
+ 1004  sudo docker ps
+ 1005  sudo docker run -d -p 5400:5432 --name postgres -e POSTGRES_PASSWORD=123123 postgres
+ 1006  docker container start e9999c93885131fee487895914ddd5e925f08f9d508cb52138982dfb485fc702
+ 1007  sudo docker container start e9999c93885131fee487895914ddd5e925f08f9d508cb52138982dfb485fc702
+ 1008  doker ps
+ 1009  sudo docker ps
+ 1010  history
+ 1011  history > history.txt
