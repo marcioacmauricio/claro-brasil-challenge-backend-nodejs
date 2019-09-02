@@ -90,18 +90,9 @@ let Device01, Device02
 test('Test user 789 request insert device 01', async ({ client,  assert }) => {
   const response = await client.post('device').header('accept', 'application/json').send({"user_id": 789, "device_name": "android01", "device_model":"Samsung S20", "enable": true}).end()
   let Obj = JSON.parse(response.text)
-  // Device01 = Obj.id
+  Device01 = Obj.id
   response.assertStatus(200)
 })
-
-test('Test user 789 request replace device 02', async ({ client,  assert }) => {
-  const response = await client.post('device').header('accept', 'application/json').send({"replaced_device_id": Device01,"user_id": 789, "device_name": "android03", "device_model":"Samsung S20", "enable": true}).end()
-  let Obj = JSON.parse(response.text)
-  Device01 = Obj.id  
-  response.assertStatus(200)
-  console.log(Device01, Device02)
-})
-
 
 test('Test user 789 request insert device 02', async ({ client,  assert }) => {
   const response = await client.post('device').header('accept', 'application/json').send({"user_id": 789, "device_name": "android02", "device_model":"Samsung S20", "enable": true}).end()
@@ -109,6 +100,15 @@ test('Test user 789 request insert device 02', async ({ client,  assert }) => {
   Device02 = Obj.id  
   response.assertStatus(200)
 })
+
+
+test('Test user 789 request replace device 02', async ({ client,  assert }) => {
+  const response = await client.post('device').header('accept', 'application/json').send({"replaced_device_id": Device02,"user_id": 789, "device_name": "android03", "device_model":"Samsung S20", "enable": true}).end()
+  let Obj = JSON.parse(response.text)
+  Device02 = Obj.id  
+  response.assertStatus(200)
+})
+
 
 test('Test user 789 delete first device', async ({ client,  assert }) => {
   const response = await client.delete(`device/${Device01}`).header('accept', 'application/json').end()
@@ -120,5 +120,6 @@ test('Test user 789 delete first device', async ({ client,  assert }) => {
 test('Test user 789 delete second device', async ({ client,  assert }) => {
   const response = await client.delete(`device/${Device02}`).header('accept', 'application/json').end()
   let Obj = JSON.parse(response.text)
-  assert.equal(Obj.message, 'Device removido com sucesso')
+  // console.log(response.text)
+  response.assertStatus(405)
 })
